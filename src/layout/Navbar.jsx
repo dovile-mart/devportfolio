@@ -18,7 +18,7 @@ export const Navbar = () => {
           DM<span className="text-primary">.</span>
         </a>
         {/** Desktop Nav */}
-        <div className="flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 flex items-center gap-1">
             {navLinks.map((link, index) => (
               <a
@@ -32,7 +32,7 @@ export const Navbar = () => {
           </div>
         </div>
         {/** CTA button */}
-        <div>
+        <div className="hidden md:block">
           <Button size="sm">Contact Me</Button>
         </div>
       </nav>
