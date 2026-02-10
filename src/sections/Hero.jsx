@@ -42,7 +42,7 @@ export const Hero = () => {
 
                       {/** Headline */}
                       <div className="space-y-4">
-                          <h1 className="text-5xl md:text-6xl lg:text-7xl font-hold leading-tight animate-fade-in">
+                          <h1 className="text-5xl md:text-6xl lg:text-7xl font-hold leading-tight animate-fade-in animation-delay-100">
                               Crafting
                               <span className="text-primary glow-text">
                                   digital
@@ -54,7 +54,7 @@ export const Hero = () => {
                                   precision.
                               </span>.
                           </h1>
-                          <p className="text-lg text-muted-foreground max-w-lg animate-fade-in">
+                          <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                               Hi, I'm Dovile - an aspiring software developer specializing in
                               React and JavaScript. I build responsive, accessible and
                               performant web applications using modern technologies.
