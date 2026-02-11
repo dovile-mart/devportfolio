@@ -23,7 +23,7 @@ export const Hero = () => {
       {/**Background */}
       <div className="absolute inset-0">
         <img
-          src="/bg_banner.png"
+          src="public/bg_banner.png"
           alt="Background image"
           className="w-full h-full object-cover opacity-40"
         />
@@ -54,18 +54,15 @@ export const Hero = () => {
                   <div className="space-y-8">
                       <div className="animate-fade-in">
                           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                              <span className="w-2 h-2 bg-primary rounded-fullanimate-pulse" />
-                              Aspiring software developer ∙∙ IT-specialist
+                              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                              Aspiring software developer ∙ IT - specialist
                           </span>
                       </div>
 
                       {/** Headline */}
                       <div className="space-y-4">
                           <h1 className="text-5xl md:text-6xl lg:text-7xl font-hold leading-tight animate-fade-in animation-delay-100">
-                              Crafting
-                              <span className="text-primary glow-text">
-                                  digital
-                              </span>
+                              Crafting <span className="text-primary glow-text">digital</span>
                               <br />
                               experiences with
                               <br />
@@ -116,7 +113,7 @@ export const Hero = () => {
                           />
                           <div className="relative glass rounded-3xl p-2 glow-border">
                               <img
-                                  src="/profile.png"
+                                  src="public/profile.png"
                                   alt="Dovile"
                                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                               />
