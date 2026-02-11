@@ -23,11 +23,11 @@ export const Hero = () => {
       {/**Background */}
       <div className="absolute inset-0">
         <img
-          src="public/bg_banner.png"
+          src="./bg_banner.png"
           alt="Background image"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute insert-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
           </div>
           
           {/** Green Dots */}
@@ -113,7 +113,7 @@ export const Hero = () => {
                           />
                           <div className="relative glass rounded-3xl p-2 glow-border">
                               <img
-                                  src="public/profile.png"
+                                  src="./profile.png"
                                   alt="Dovile"
                                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                               />
