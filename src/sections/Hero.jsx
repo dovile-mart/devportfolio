@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, ChevronDown, Github, Linkedin } from "lucide-react";
+import { ArrowRight, ChevronDown, Github, Linkedin, Target } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
@@ -88,12 +88,13 @@ export const Hero = () => {
                       <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                           <span className="text-sm text-muted-foreground">Follow: </span>
                           {[
-                              { icon: Github, href: "#" },
-                              { icon: Linkedin, href: "#" },
+                              { icon: Github, href: "https://github.com/dovile-mart", target: "_blank" },
+                              { icon: Linkedin, href: "https://www.linkedin.com/in/dovile-mart/", target: "_blank" },
                           ].map((social, index) => (
                               <a
                                   key={index}
                                   href={social.href}
+                                  target={social.target}
                                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                               >
                                   {<social.icon className="w-5 h-5" />}
