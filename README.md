@@ -1,4 +1,7 @@
 React project with TailwindCSS deployed to [GitHub Pages](https://dovile-mart.github.io/devportfolio/).
+
+<img width="1654" height="939" alt="image" src="https://github.com/user-attachments/assets/52ede618-c8a7-4b4c-ac5e-20893ef3cf3f" />
+
 <!--# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
