@@ -62,6 +62,13 @@ export const About = () => {
                 technical skills and grow into well-rounded IT professional.
               </p>
             </div>
+            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+              <p className="text-lg font-medium italic text-foreground">
+                "I strive to create applications that solve real-world problems,
+                improve user experiences and allow me to grow as a skilled and
+                adaptable IT professional."
+              </p>
+            </div>
           </div>
         </div>
       </div>
