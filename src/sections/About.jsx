@@ -69,7 +69,18 @@ export const About = () => {
                 adaptable IT professional."
               </p>
             </div>
-          </div>
+            </div>
+                  
+            {/*Right Column*/}
+                  <div className="grid sm:grid-cols-2 gap-6">
+                      {highlights.map((item, index) => (
+                          <div>
+                              <div><item.icon /></div>
+                              <h3>{item.title}</h3>
+                              <p>{ item.description}</p>
+                          </div>
+                      ))}
+            </div>
         </div>
       </div>
     </section>
