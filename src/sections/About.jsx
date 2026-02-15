@@ -25,6 +25,19 @@ const highlights = [
 ];
 export const About = () => { 
     return (
-        <section></section>
+        <section id="about" className="py-32 relative overflow-hidden">
+            <div>
+                <div>
+                    {/*Left Column*/}
+                    <div>
+                        <span>About Me</span>
+                    </div>
+                    <h2>
+                        Building the future,
+                        <span> one component at a time.</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
     );
 }
