@@ -8,8 +8,8 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: "./projects/population-graphs.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "#",
-    github: "#",
+    link: "https://dovile-mart.github.io/PopulationGraphs/",
+    github: "https://github.com/dovile-mart/PopulationGraphs",
     },
     {
     title: "Project 2",
@@ -18,7 +18,7 @@ const projects = [
     image: "./projects/food-app.png",
     tags: ["React", "JavaScript", "Node.js"],
     link: "#",
-    github: "#",
+    github: "https://github.com/dovile-mart/food-app",
   },
 ];
 
