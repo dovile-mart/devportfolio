@@ -1,3 +1,5 @@
+import { Quote } from "lucide-react";
+
 const testimonials = [
     {
         quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
@@ -43,6 +45,34 @@ export const Testimonials = () => {
                             amazing people.
                         </span>
                     </h2>
+                </div>
+                {/* Testimonials Carousel */}
+                <div>
+                    <div>
+                        {/* Main testimonial */}
+                        <div>
+                            <div>
+                                <Quote />
+                            </div>
+                            <blockquote>
+                                "{testimonials[0].quote}"
+                            </blockquote>
+                            <div>
+                                <img
+                                    src={testimonials[0].avatar}
+                                    alt={testimonials[0].author}
+                                />
+                                <div>
+                                    <div>
+                                        {testimonials[0].author}
+                                    </div>
+                                    <div>
+                                        {testimonials[0].role}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
