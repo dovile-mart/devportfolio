@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useState } from "react";
 
 const testimonials = [
     {
@@ -16,6 +17,16 @@ const testimonials = [
 ];
 
 export const Testimonials = () => { 
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const next = () => { 
+        setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    }
+
+    const previous = () => { 
+        setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    }
+    
     return (
         <section
             id="testimonials"
@@ -55,35 +66,38 @@ export const Testimonials = () => {
                                 <Quote className="w-6 h-6 text-primary-foreground" />
                             </div>
                             <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
-                                "{testimonials[0].quote}"
+                                "{testimonials[activeIndex].quote}"
                             </blockquote>
                             <div className="flex items-center gap-4">
                                 <img
-                                    src={testimonials[0].avatar}
-                                    alt={testimonials[0].author}
+                                    src={testimonials[activeIndex].avatar}
+                                    alt={testimonials[activeIndex].author}
                                     className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
                                 />
                                 <div> {/**  className="flex items-center gap-4" */}
                                     <div className="font-semibold">
-                                        {testimonials[0].author}
+                                        {testimonials[activeIndex].author}
                                     </div>
                                     <div className="text-sm text-muted-foreground">
-                                        {testimonials[0].role}
+                                        {testimonials[activeIndex].role}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/** Testimonials navigation */}
                         <div className="flex items-center justify-center gap-4 mt-8">
-                            <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+                            <button
+                                onClick={previous}
+                                className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
                                 <ChevronLeft />
                             </button>
 
                             <div className="flex gap-2">
                                 {testimonials.map((_, index) => (
                                     <button
+                                        onClick={()=>setActiveIndex(index)}
                                         className={`w-2 h-2 rounded-full transition-all duration-300
-                                         ${index === 0
+                                         ${index === activeIndex
                                                 ? "w-8 bg-primary"
                                                 : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                                             }`
@@ -91,7 +105,9 @@ export const Testimonials = () => {
                                     />
                                 ))}
                             </div>
-                            <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+                            <button
+                                onClick={next}
+                                className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
                                 <ChevronRight />
                             </button>
                         </div>
