@@ -47,26 +47,27 @@ export const Testimonials = () => {
                     </h2>
                 </div>
                 {/* Testimonials Carousel */}
-                <div>
-                    <div>
+                <div className="max-w-4xl mx-auto">
+                    <div className="relative">
                         {/* Main testimonial */}
-                        <div>
-                            <div>
-                                <Quote />
+                        <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
+                            <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                                <Quote className="w-6 h-6 text-primary-foreground" />
                             </div>
-                            <blockquote>
+                            <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
                                 "{testimonials[0].quote}"
                             </blockquote>
-                            <div>
+                            <div className="flex items-center gap-4">
                                 <img
                                     src={testimonials[0].avatar}
                                     alt={testimonials[0].author}
+                                    className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
                                 />
-                                <div>
-                                    <div>
+                                <div> {/**  className="flex items-center gap-4" */}
+                                    <div className="font-semibold">
                                         {testimonials[0].author}
                                     </div>
-                                    <div>
+                                    <div className="text-sm text-muted-foreground">
                                         {testimonials[0].role}
                                     </div>
                                 </div>
