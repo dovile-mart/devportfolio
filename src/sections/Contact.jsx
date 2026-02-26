@@ -1,4 +1,5 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Button } from "@/components/Button";
 
 const contactInfo = [
     {
@@ -107,6 +108,10 @@ export const Contact = () => {
                                     outline-none transition-all resize-none"
                                 />
                             </div>
+                            <Button className="w-full" type="submit" size="lg">
+                                Send Message
+                                <Send/>
+                            </Button>
                         </form>
                     </div>
                 </div>
