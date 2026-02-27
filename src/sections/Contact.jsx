@@ -216,6 +216,31 @@ export const Contact = () => {
                             )}
                         </form>
                     </div>
+
+                    { /**Contact Info */}
+                    <div>
+                        <div>
+                            <h3>
+                            Contact Information
+                            </h3>
+                            <div>
+                                {contactInfo.map((item, i) => (
+                                    <a
+                                        key={i}
+                                        href={item.href}
+                                    >
+                                        <div>
+                                            <item.icon />
+                                        </div>
+                                        <div>
+                                            <div>{item.label}</div>
+                                            <div>{item.value}</div>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
