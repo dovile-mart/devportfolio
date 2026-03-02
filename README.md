@@ -1,6 +1,26 @@
-React project with TailwindCSS deployed to [GitHub Pages](https://dovile-mart.github.io/devportfolio/).
-
 <img width="1654" height="939" alt="image" src="https://github.com/user-attachments/assets/52ede618-c8a7-4b4c-ac5e-20893ef3cf3f" />
+
+### Responsive portfolio website built with **React** using **Tailwind CSS**, featuring a contact form via **EmailJS**.
+
+Portfolio is built as a learning project following this [YouTube tutorial](https://youtu.be/cIYdiRDFWQw?si=H1_ZTHjDyWEARMCv).
+
+**Still in progress**, but the newest version is deployed to [GitHub Pages](https://dovile-mart.github.io/devportfolio/).
+
+*Sections*: 
+
+About • Experience • Projects • Testimonials • Contact
+
+*Technologies*:
+
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![EmailJS](https://img.shields.io/badge/EmailJS-FF69B4?logo=emailjs&logoColor=white)
+
+
+
+
+
 
 <!--# React + Vite
 
