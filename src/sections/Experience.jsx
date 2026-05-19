@@ -10,7 +10,7 @@ const experiences = [
     {
         period: "Jan 2025 - Jun 2025",
         role: "Trainee",
-        company: "Haaga-Helia Univercity of Applied Sciences",
+        company: "Haaga-Helia University of Applied Sciences",
         description: "Worked as a trainee in Software Development and ICT Infrastructure & Cloud Services departments, focusing on learning environments in education. Gained experience in testing systems, supporting teachers and contributing to development discussions while strengthening skills in teamwork, communication and project management.",
         technologies: ["Technical documentation", "Cloud services", "Computer hardware", "Virtualization", "JavaScript", "Java"],
         current: false,
