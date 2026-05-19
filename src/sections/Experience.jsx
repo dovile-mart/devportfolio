@@ -26,7 +26,7 @@ const experiences = [
     {
         period: "Jan 2022 - Dec 2025",
         role: "Student, Business Information Technology (BBA)",
-        company: "Haaga-Helia Univercity of Applied Sciences",
+        company: "Haaga-Helia University of Applied Sciences",
         description: "Majoring in software development",
         technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Python", "Java", "Spring Boot", "Relational Databases", "Full-Stack Development", "Software Testing", "Scrum", "Requirements Management", "Business Administration", "IT & Business Integration", "Project Management"],
         current: false,
