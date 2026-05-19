@@ -1,28 +1,68 @@
 const experiences = [
-    {
+    /*{
         period: "2023 - Present",
         role: "Role 1",
         company: "Company 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         technologies: ["React", "JavaScript", "Java", "Node.js"],
         current: true,
+    },*/
+    {
+        period: "Jan 2025 - Jun 2025",
+        role: "Trainee",
+        company: "Haaga-Helia Univercity of Applied Sciences",
+        description: "Worked as a trainee in Software Development and ICT Infrastructure & Cloud Services departments, focusing on learning environments in education. Gained experience in testing systems, supporting teachers and contributing to development discussions while strengthening skills in teamwork, communication and project management.",
+        technologies: ["Technical documentation", "Cloud services", "Computer hardware", "Virtualization", "JavaScript", "Java"],
+        current: false,
     },
-        {
-        period: "2022 - 2023",
-        role: "Role 2",
-        company: "Company 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        technologies: ["React", "JavaScript", "Java", "Node.js"],
+    {
+        period: "Nov 2023",
+        role: "Event volunteer",
+        company: "Finnish Software Testing Board FiSTB",
+        description: "Assisted event organizers and participants at Testing Assembly 2023 on November 16 to ensure smooth event execution.",
+        technologies: ["Teamwork", "Customer service", "Communication skills", "Organizational skills", "Adaptability"],
+        current: false,
+    },
+    {
+        period: "Jan 2022 - Dec 2025",
+        role: "Student, Business Information Technology (BBA)",
+        company: "Haaga-Helia Univercity of Applied Sciences",
+        description: "Majoring in software development",
+        technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Python", "Java", "Spring Boot", "Relational Databases", "Full-Stack Development", "Software Testing", "Scrum", "Requirements Management", "Business Administration", "IT & Business Integration", "Project Management"],
         current: false,
     },
         {
-        period: "2020 - 2022",
-        role: "Role 3",
-        company: "Company 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        technologies: ["React", "JavaScript", "Java", "Node.js"],
+        period: "Jun 2021 - Jun 2024",
+        role: "Founding member of parent association",
+        company: "Vanhempainyhdistys PälLi ry",
+        description: "Built a parent community across two schools, managed social media channels and organized meetings for parents and members.",
+        technologies: ["Teamwork", "Communication skills", "Organizational skills"],
         current: false,
     },
+        {
+        period: "Jun 2021 - Feb 2023",
+        role: "Childcare Assistant & Early Childhood Educator",
+        company: "Piccolo Oy",
+        description: "Planning and implementing early childhood education activities for children aged 1–5",
+        technologies: ["Teamwork", "Pedagogical planning", "Communication skills", "Interpersonal skills"],
+        current: false,
+    },
+        {
+        period: "Feb 2019 - Mar 2019",
+        role: "Trainee",
+        company: "City of Porvoo",
+        description: "IT support and school assistant duties, including iPad setup, maintenance of Windows devices, assisting teachers and students, preparing teaching materials and supporting the use of Chromebooks and internet services.",
+        technologies: ["Digital skills", "Problem-solving", "Time management", "Communication skills"],
+        current: false,
+    },
+    {
+        period: "Aug 2011 - Aug 2018",
+        role: "Supervisor, Housekeeper",
+        company: "Haikko Manor & Spa",
+        description: "Managed housekeeping operations in a hotel environment, including staff supervision, quality inspections, training new employees and handling guest inquiries. Gained experience with hotel management systems and administrative tasks such as scheduling, documentation, and collaboration with management teams.",
+        technologies: ["Teamwork", "Leadership", "Organizational skills", "Customer service", "Communication skills"],
+        current: false,
+    }
 ];
 
 export const Experience = () => { 
