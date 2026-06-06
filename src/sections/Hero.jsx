@@ -55,7 +55,7 @@ export const Hero = () => {
                       <div className="animate-fade-in">
                           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                              Aspiring software developer ∙ IT - specialist
+                              Junior software developer ∙ IT-specialist
                           </span>
                       </div>
 
@@ -71,7 +71,7 @@ export const Hero = () => {
                               </span>.
                           </h1>
                           <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                              Hi, I'm Dovile - an aspiring software developer specializing in
+                              Hi, I'm Dovile - junior software developer specializing in
                               React and JavaScript. I build responsive, accessible and
                               performant web applications using modern technologies.
                           </p>
