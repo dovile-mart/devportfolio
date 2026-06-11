@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 
 const experiences = [
     /*{
@@ -139,29 +140,31 @@ export const Experience = () => {
                                         <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                                         <p className="text-muted-foreground">{exp.company}</p>
                                         {expanded[index] && (
-                                            <p className="text-sm text-muted-foreground mt-4">
-                                                {exp.description}
-                                            </p>
+                                            <div>    
+                                                <p className="text-sm text-muted-foreground mt-4">
+                                                    {exp.description}
+                                                </p>
+
+                                                <div className={`flex flex-wrap gap-2 mt-4 ${ 
+                                                    index % 2 === 0 ? "md:justify-end" : ""
+                                                    }`}
+                                                >
+                                                    {exp.technologies.map((tech, techIndex) => (
+                                                        <span
+                                                            key={techIndex}
+                                                            className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground"
+                                                        >
+                                                            {tech}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         )}
                                         <button onClick={() => handleExpandClick(index)}
-                                            className="mt-2 text-muted-foreground text-sm font-bold hover:underline"
+                                            className="mt-2 text-primary text-sm font-bold hover:underline"
                                         >
-                                            {expanded[index] ? "Show less" : "Show more"}
+                                            {expanded[index] ?  <ChevronUpIcon /> :  <ChevronDownIcon />}
                                         </button>
-                                        
-                                        <div className={`flex flex-wrap gap-2 mt-4 ${ 
-                                            index % 2 === 0 ? "md:justify-end" : ""
-                                            }`}
-                                        >
-                                            {exp.technologies.map((tech, techIndex) => (
-                                                <span
-                                                    key={techIndex}
-                                                    className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground"
-                                                >
-                                                    {tech}
-                                                </span>
-                                            ))}
-                                        </div>
                                     </div>
                                 </div>
                             </div>))}
