@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const experiences = [
     /*{
         period: "2023 - Present",
@@ -66,6 +68,13 @@ const experiences = [
 ];
 
 export const Experience = () => { 
+    const [expanded, setExpanded] = useState({});
+    const handleExpandClick = (index) => {
+    setExpanded((prev) => ({
+        ...prev,
+        [index]: !prev[index],
+    }));
+};
     return (
         <section
             id="experience"
@@ -129,7 +138,17 @@ export const Experience = () => {
                                         <span className="text-sm text-primary font-medium">{exp.period}</span>
                                         <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                                         <p className="text-muted-foreground">{exp.company}</p>
-                                        <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
+                                        {expanded[index] && (
+                                            <p className="text-sm text-muted-foreground mt-4">
+                                                {exp.description}
+                                            </p>
+                                        )}
+                                        <button onClick={() => handleExpandClick(index)}
+                                            className="mt-2 text-muted-foreground text-sm font-bold hover:underline"
+                                        >
+                                            {expanded[index] ? "Show less" : "Show more"}
+                                        </button>
+                                        
                                         <div className={`flex flex-wrap gap-2 mt-4 ${ 
                                             index % 2 === 0 ? "md:justify-end" : ""
                                             }`}
