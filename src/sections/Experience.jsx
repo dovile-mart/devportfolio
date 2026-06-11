@@ -139,6 +139,11 @@ export const Experience = () => {
                                         <span className="text-sm text-primary font-medium">{exp.period}</span>
                                         <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                                         <p className="text-muted-foreground">{exp.company}</p>
+                                        <button onClick={() => handleExpandClick(index)}
+                                            className="mt-2 text-primary text-sm font-bold hover:underline"
+                                        >
+                                            {expanded[index] ?  <ChevronUpIcon /> :  <ChevronDownIcon />}
+                                        </button>
                                         {expanded[index] && (
                                             <div>    
                                                 <p className="text-sm text-muted-foreground mt-4">
@@ -160,11 +165,7 @@ export const Experience = () => {
                                                 </div>
                                             </div>
                                         )}
-                                        <button onClick={() => handleExpandClick(index)}
-                                            className="mt-2 text-primary text-sm font-bold hover:underline"
-                                        >
-                                            {expanded[index] ?  <ChevronUpIcon /> :  <ChevronDownIcon />}
-                                        </button>
+                                        
                                     </div>
                                 </div>
                             </div>))}
