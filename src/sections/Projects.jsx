@@ -17,7 +17,7 @@ const projects = [
       "A recipe application built with React and MUI for browsing, adding, editing and deleting recipes. Developed as a personal frontend course project to practice React fundamentals and working with open data.",
     image: "./projects/food-app.png",
     tags: ["React", "JavaScript", "Node.js", "MUI", "REST API"],
-    link: "#",
+    link: undefined,
     github: "https://github.com/dovile-mart/food-app",
   },
 ];
@@ -63,12 +63,16 @@ export const Projects = () => {
                                 />
                                 { /* Overlay Links */}
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-100">
-                                    <a href={ project.link} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                                    {project.link &&
+                                        (<a href={project.link} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                                         <ArrowUpRight className="w-5 h-5" />
-                                    </a>
-                                    <a href={ project.github} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                                        </a>)
+                                    }
+                                    {project.github && (
+                                        <a href={project.github} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                                         <Github className="w-5 h-5" />
-                                    </a>
+                                        </a>)
+                                    }
                                 </div>
                             </div>
 
