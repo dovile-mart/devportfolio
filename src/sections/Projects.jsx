@@ -63,10 +63,10 @@ export const Projects = () => {
                                 />
                                 { /* Overlay Links */}
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-100">
-                                    <a href={ project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                                    <a href={ project.link} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                                         <ArrowUpRight className="w-5 h-5" />
                                     </a>
-                                    <a href={ project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                                    <a href={ project.github} target="_blank" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
                                         <Github className="w-5 h-5" />
                                     </a>
                                 </div>
