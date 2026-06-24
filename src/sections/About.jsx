@@ -47,14 +47,15 @@ export const About = () => {
                 opportunity in the tech industry. I'm especially interested in
                 full-stack development, but I'm open to any role where I can
                 grow as an IT professional and contribute to real-world
-                projects.
+                projects including software testing, quality assurance and improving user experience.
               </p>
               <p>
                 I enjoy building modern applications and turning ideas into
-                clean, functional solutions. My experience is mainly focused on
-                React, JavaScript and Java, working with both front-end
-                interfaces and backend logic. I'm continuously learning and
-                improving my skills to become a well-rounded developer.
+                clean, functional and user-friendly solutions. My experience is mainly focused on
+                React, JavaScript and Java, working with both frontend
+                interfaces and backend logic. I have a strong interest in software quality, testing
+                practices, development process documentation, collaborative project work.
+                I'm continuously learning and improving my skills to become a well-rounded developer.
               </p>
               <p>
                 I'm eager to join a team where I can contribute to real-world
