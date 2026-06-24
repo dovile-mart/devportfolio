@@ -71,9 +71,7 @@ export const Hero = () => {
                               </span>.
                           </h1>
                           <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                              Hi, I'm Dovile - junior software developer specializing in
-                              React and JavaScript. I build responsive, accessible and
-                              performant web applications using modern technologies.
+                              Hi, I'm Dovile - a junior software developer with a background in IT support. I'm passionate about creating clean, functional solutions and learning new technologies.
                           </p>
                       </div>
                       {/** CTA Buttons */}
