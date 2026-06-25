@@ -126,13 +126,15 @@ export const Projects = () => {
                         </div>
                     ))}
                 </div>
-                { /* View All CTA Button 
+                { /* View All CTA Button */}
                 <div className="text-center mt-12 animate-fade-in animation-delay-500">
-                    <AnimatedBorderButton>
+                    <a href="https://github.com/dovile-mart" target="_blank" className="px-6 py-3 text-lg font-medium">
+                        <AnimatedBorderButton>
                         View All Projects
-                        <ArrowUpRight className="w-5 h-5" />
-                    </AnimatedBorderButton>
-                </div>*/}
+                        <Github className="w-5 h-5" />
+                        </AnimatedBorderButton>
+                        </a>
+                </div>
             </div>
         </section>
     );
