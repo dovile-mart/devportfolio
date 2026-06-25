@@ -2,7 +2,25 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
-  {
+    {
+    title: "Softala project",
+    description:
+      "This project is a prototype web application designed to provide a shared platform for companies, transport operators and processing facilities to manage, reserve and invoice pallets used in battery recycling logistics. It replaces previously inconsistent working methods across different stakeholders and is built using JHipster, which provides built-in features such as user management, database integration, and security.",
+    image: "./projects/softala.png",
+    tags: ["React", "JHipster", "TypeScript", "Java", "SpringBoot", "H2 database", "REST API", "Figma", "Heroku"],
+    link: undefined,
+    github: "https://github.com/softalaRyhma2/SR2",
+    },
+    {
+    title: "MTT project",
+    description:
+      "MTT - 'Mitä tänään tehtäisiin?' - is a web application developed as a part of a software project university course. The application helps users discover events and activities based on weather conditions, location and time. The platform combines user-created and open-data events, allowing users to find relevant activities nearby, while registered users can create and manage their own events.",
+    image: "./projects/mtt.png",
+    tags: ["React", "JavaScript", "Java", "SpringBoot", "Swagger UI", "H2 database", "REST API", "Figma"],
+    link: undefined,
+    github: "https://github.com/softalaRyhma2/SR2",
+    },
+    {
     title: "Population Graphs",
     description:
       "A web application that visualizes population data from the World Bank API. Developed during the #mimmitkoodaa MOOC course to practice API integration, JavaScript and interactive data visualization.",
@@ -82,10 +100,13 @@ export const Projects = () => {
                                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                                         {project.title}
                                     </h3>
-                                    <ArrowUpRight
+                                    {project.link &&
+                                        (<a href={project.link} target="_blank">
+                                            <ArrowUpRight
                                         className="w-5 h-5 text-muted-foreground group-hover:text-primary
                                         group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
                                     />
+                                </a>)}
                                 </div>
                                 <p className="text-muted-foreground text-sm">
                                     {project.description}
